@@ -65,13 +65,7 @@ function calculateIndividualEmployeeBonus(employees) {
    return console.log(( employees.name + " has an annual salary of " + employees.annualSalary + " and has a bonus percentage of: " + bonuspercent +'% ' + "adding up to " + totalCompensation + " in total compensation"));
 }
   // return new object with bonus results
- 
-  calculateIndividualEmployeeBonus(employees[0]);
-  calculateIndividualEmployeeBonus(employees[1]);
-  calculateIndividualEmployeeBonus(employees[2]);
-  calculateIndividualEmployeeBonus(employees[3]);
-  calculateIndividualEmployeeBonus(employees[4]);
 
-  //for (let emply of employees) {
-  //  console.log(calculateIndividualEmployeeBonus(emply))
+  for (let emply of employees) {
+ calculateIndividualEmployeeBonus(emply);
   }
